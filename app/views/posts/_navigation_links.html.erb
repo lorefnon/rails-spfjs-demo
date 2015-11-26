@@ -1,0 +1,6 @@
+  <% if @page > 0 %>
+     <%= link_to 'Previous Page', posts_path(page: @page+1) %>
+  <% end %>
+  <% if @page < @num_pages -1 %>
+     <%= link_to 'Next Page', posts_path(page: @page+1) %>
+  <% end %>
