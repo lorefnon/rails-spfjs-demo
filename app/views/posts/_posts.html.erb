@@ -1,3 +1,13 @@
-  <% @posts.each do |post| %>
-    <%= render 'posts/summary', post: post %>
-  <% end %>
+<ul class="posts-list">
+
+  <div class="posts">
+    <% @posts.each do |post| %>
+      <%= render 'posts/summary', post: post %>
+    <% end %>
+  </div>
+
+</ul>
+
+<div class="navigation-links">
+  <%= render 'posts/navigation_links' %>
+</div>

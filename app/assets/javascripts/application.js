@@ -13,3 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).on('spfdone', function(event) {
+
+  if (event.originalEvent.detail.response.body['spf-posts-container']) {
+    $('#spf-posts-container').addClass('flash')
+
+    setTimeout(function() {
+      $('#spf-posts-container').removeClass('flash')
+    }, 3000)
+
+  }
+
+});
