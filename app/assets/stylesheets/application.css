@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+.blog-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Oswald';
+    text-align: center;
+}
+
+.post-title {
+    text-align: left;
+}
+
+.post-title a {
+    text-decoration: none;
+}
+
+.posts-list {
+    list-style-type: none;
+}
+
+.posts-list li {
+    border-bottom: 1px solid #ddd;
+}
+
+.navigation-links {
+    text-align: center;
+}

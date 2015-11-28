@@ -1,13 +1,15 @@
-<h1> Lorefnon's Awesome blog </h2>
-<h2> Posts </h2>
-<ul>
+<div class="blog-container">
+  <h1 class="blog-title title"> Lorefnon's Awesome blog </h1>
+  <h2 class="page-title title"> Posts </h2>
+  <ul class="posts-list">
 
-  <div id="posts">
-    <%= render 'posts/posts' %>
-  </div>
+    <div class="posts">
+      <%= render 'posts/posts' %>
+    </div>
 
-  <div id="navigation-links">
-    <%= render 'posts/navigation_links' %>
-  </div>
+    <div class="navigation-links">
+      <%= render 'posts/navigation_links' %>
+    </div>
 
-</ul>
+  </ul>
+</div>

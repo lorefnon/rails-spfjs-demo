@@ -1,2 +1,4 @@
-      <h2> <%= link_to @post.title, post_path(id: @post.id) %> </h2>
-      <p> <%= @post.body %> </p>
+<div class="blog-container">
+  <h2 class="post-title title"> <%= link_to @post.title, post_path(id: @post.id) %> </h2>
+  <div class="post-body"> <%= @post.body %> </div>
+</div>
